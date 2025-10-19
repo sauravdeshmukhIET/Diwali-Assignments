@@ -8,11 +8,9 @@ public class Student implements Serializable, Comparable<Student> {
     private double attendance_percentage;
     private int score;
 
-    // Default constructor
     public Student() {
     }
 
-    // Parameterized constructor
     public Student(int rollno, String sname, String course, double attendance_percentage, int score) {
         this.rollno = rollno;
         this.sname = sname;
@@ -50,7 +48,8 @@ public class Student implements Serializable, Comparable<Student> {
 
     @Override
     public int compareTo(Student other) {
-        // Sort in decreasing order of attendance
+ 
         return Double.compare(other.attendance_percentage, this.attendance_percentage);
     }
 }
+
