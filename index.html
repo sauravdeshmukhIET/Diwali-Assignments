@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form id="registrationForm" onsubmit="return validateForm();">
+    <div class="form-group">
+      <label>First Name:</label>
+      <input type="text" id="firstName">
+      <span class="error" id="firstNameError"></span>
+    </div>
+
+    <div class="form-group">
+      <label>Last Name:</label>
+      <input type="text" id="lastName">
+      <span class="error" id="lastNameError"></span>
+    </div>
+
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="text" id="email">
+      <span class="error" id="emailError"></span>
+    </div>
+
+    <div class="form-group">
+      <label>User ID:</label>
+      <input type="text" id="userId">
+      <span class="error" id="userIdError"></span>
+    </div>
+
+    <div class="form-group">
+      <label>Password:</label>
+      <input type="password" id="password">
+      <span class="error" id="passwordError"></span>
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword">
+      <span class="error" id="confirmPasswordError"></span>
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
